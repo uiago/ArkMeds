@@ -9,5 +9,7 @@ public class activity_MovieList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__movie_list);
+
     }
+
 }

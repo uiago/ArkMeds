@@ -13,11 +13,11 @@ public class activity_search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
     }
-    public final static String EXTRA_MESSAGE = ".iago.arkmeds.MESSAGE";
+    public final static String EXTRA_MESSAGE = "iago.arkmeds.MESSAGE";
 
     public void startQuery(View view){
         Intent intent = new Intent(this, activity_MovieList.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message); //Resolver erro
+        EditText editText = (EditText) findViewById(R.id.editText);
         String queryText = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, queryText);
         startActivity(intent);

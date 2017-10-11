@@ -17,7 +17,7 @@ public class activity_search extends AppCompatActivity {
 
     public void startQuery(View view){
         Intent intent = new Intent(this, activity_MovieList.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
+        EditText editText = (EditText) findViewById(R.id.edit_message); //Resolver erro
         String queryText = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, queryText);
         startActivity(intent);
